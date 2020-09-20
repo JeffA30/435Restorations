@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Blinker&display=swap" rel="stylesheet">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <title>435 Restorations</title>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Contact Me</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-user prefix grey-text"></i>
+          <input type="text" id="form34" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="form34">Your name</label>
+        </div>
+
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="form29" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="form29">Your email</label>
+        </div>
+
+        <div class="md-form mb-5">
+          <i class="fas fa-tag prefix grey-text"></i>
+          <input type="text" id="form32" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="form32">Subject</label>
+        </div>
+
+        <div class="md-form">
+          <i class="fas fa-pencil prefix grey-text"></i>
+          <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+          <label data-error="wrong" data-success="right" for="form8">Your message</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</li></a>
+
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</li></a>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</li></a>
+            <li class="nav-item"><a class="nav-link" href="#"data-toggle="modal" data-target="#modalContactForm">Contact</li></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="text-center mb-5 mt-5">Gallery</h1>
+<!-- 1st row of cards -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4"><div class="card shadow" style="width: 18rem;">
+            <div class="image">
+              <img class="card-img-top" src="images/oldcplates.jpg" alt="Card image cap">
+            </div>            
+            <div class="card-body text-center">
+              <h5 class="card-title">Old Chainplates</h5>
+              <p class="card-text">Original, undersized and corroded chainplates, using only 1/4"-20 bolts. Replacement was necesssary! </p>
+            </div>
+          </div></div>
+          <div class="col-md-4"><div class="card shadow" style="width: 18rem;">
+            <div class="image">
+              <img class="card-img-top" src="images/bentcplate.jpg" alt="Card image cap">
+            </div>            
+            <div class="card-body text-center">
+              <h5 class="card-title">Old Chainplate</h5>
+              <p class="card-text">This is one of the old cap shroud chainplates, you can see the bend due to some long ago collision!</p>
+              
+            </div>
+          </div></div>
+          <div class="col-md-4"><div class="card shadow" style="width: 18rem;">
+            <div class="image">
+              <img class="card-img-top" src="images/newcplates.jpg" alt="Card image cap">
+            </div>
+            
+            <div class="card-body text-center">
+              <h5 class="card-title">New Chainplates</h5>
+              <p class="card-text">In-house manufactured, thicker and with larger 5/16"-18 bolts, 316 stainless steel.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+<!-- 2nd row of cards -->
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-4"><div class="card shadow" style="width: 18rem;">
+            <div class="image">
+              <img class="card-img-top" src="images/bulkhead1.jpg" alt="Card image cap">
+            </div>            
+            <div class="card-body text-center">
+              <h5 class="card-title">Bulkhead Rot</h5>
+              <p class="card-text">Main bulkhead was rotted where the capshroud chainplate was attached - the rotten area was cutout. </p>
+            </div>
+          </div></div>
+          <div class="col-md-4"><div class="card shadow" style="width: 18rem;">
+            <div class="image">
+              <img class="card-img-top" src="images/bulkhead2.jpg" alt="Card image cap">
+            </div>            
+            <div class="card-body text-center">
+              <h5 class="card-title">Bulkhead Pieces</h5>
+              <p class="card-text">The new pieces were fabricated out of BS1088 3/4" Okume plywood in our well equipped workshop.</p>
+              
+            </div>
+          </div></div>
+          <div class="col-md-4"><div class="card shadow" style="width: 18rem;">
+            <div class="image">
+              <img class="card-img-top" src="images/bulkhead3.jpg" alt="Card image cap">
+            </div>
+            
+            <div class="card-body text-center">
+              <h5 class="card-title">Glassed In</h5>
+              <p class="card-text">Repair pieces scarfed in and glassed in with 3 layers of 1708 e-glass and epoxy resin.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <!-- 3rd row of cards -->
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-4"><div class="card shadow" style="width: 18rem;">
+            <div class="image">
+              <img class="card-img-top" src="images/fantail1.jpg" alt="Card image cap">
+            </div>            
+            <div class="card-body text-center">
+              <h5 class="card-title">Deck Core</h5>
+              <p class="card-text">Wet and rotten deck core was removed painstakingly with various tools. </p>
+            </div>
+          </div></div>
+          <div class="col-md-4"><div class="card shadow" style="width: 18rem;">
+            <div class="image">
+              <img class="card-img-top" src="images/fantail2.jpg" alt="Card image cap">
+            </div>            
+            <div class="card-body text-center">
+              <h5 class="card-title">New Core Glassed In</h5>
+              <p class="card-text">The new 3/8" balsa core was glassed in using 1808 biaxial cloth and epoxy resin.</p>
+              
+            </div>
+          </div></div>
+          <div class="col-md-4"><div class="card shadow" style="width: 18rem;">
+            <div class="image">
+              <img class="card-img-top" src="images/fantail3.jpg" alt="Card image cap">
+            </div>
+            
+            <div class="card-body text-center">
+              <h5 class="card-title">All Finished</h5>
+              <p class="card-text">Finally, the area was faired with thickened epoxy and painted with 2 part polyurethane.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+       <!-- 4th row of cards -->
+       <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-4"><div class="card shadow" style="width: 18rem;">
+            <div class="image">
+              <img class="card-img-top" src="images/ext1.jpg" alt="Card image cap">
+            </div>            
+            <div class="card-body text-center">
+              <h5 class="card-title">Exterior</h5>
+              <p class="card-text">The original 50 year old gelcoat was crazed and gouged in a great number of places.</p>
+            </div>
+          </div></div>
+          <div class="col-md-4"><div class="card shadow" style="width: 18rem;">
+            <div class="image">
+              <img class="card-img-top" src="images/ext2.jpg" alt="Card image cap">
+            </div>            
+            <div class="card-body text-center">
+              <h5 class="card-title">Fairing</h5>
+              <p class="card-text">All defects were meticulously ground out and faired with epoxy faiting compound.</p>
+              
+            </div>
+          </div></div>
+          <div class="col-md-4"><div class="card shadow" style="width: 18rem;">
+            <div class="image">
+              <img class="card-img-top" src="images/ext3.jpg" alt="Card image cap">
+            </div>
+            
+            <div class="card-body text-center">
+              <h5 class="card-title">Better Than New</h5>
+              <p class="card-text">New paint, windows, hatches and brightwork bring new life to a worthy and classic yacht.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <footer class="footer mt-5">
+        <div class="container-fluid padding">
+          <div class="row text-center">
+            <div class="col-md-4">
+              <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+              <hr class="light">
+              <p>555-1918</p>
+              <p>email@lalaalalal</p>
+              <p>address</p>
+              <p>city, staet, pstal</p>
+            </div>
+            <div class="col-md-4">
+              <hr class="light">
+              <h5>Availability</h5>
+              <hr class="light">
+              <p>Nights and Weekends</p>
+              <p>Friday-Sunday</p>
+              
+            </div>
+            <div class="col-md-4">
+              <hr class="light">
+              <h5>Regions</h5>
+              <hr class="light">
+              <p>Northeast USA</p>
+              <p>NJ-MD-PA-DL</p>                
+            </div>
+            <div class="col-12"><hr class="light">
+            <h5>&copy; 2020 435restorations.com</h5>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    </body>
